@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+  
+
+      <meta charset="UTF-8" />
+      <title>Tech Quiz</title>
+      <link href="quiz.css" rel="stylesheet" type="text/css" />
+
+	<script type = "text/javascript" src="quiz.js"></script>
+
+	
+   </head>
+
+   <body>
+      <form id="quiz" name="quiz" action="">
+
+      <header>
+         <img src="tech.jpg" alt="Tech Quiz" />
+         <nav class="horizontal">
+            <ul>
+				 <li><a href="#">Home</a></li>
+                 <li><a href="#">Guessing Game</a></li>
+                 <li><a href="#">Music</a></li>
+                 <li><a href="#">Tech Quiz</a></li>
+				 <li><a href="#">Upcoming Event</a></li>
+         </ul>
+      </nav>
+
+      </header>
+
+      
+
+      <section id="main">
+         <h1>Tech Questions</h1>
+
+         <p>All of our tech quizzes are scored on the number of correct
+            answers and the time required to submit those answers.
+         </p>
+         <p>To start the quiz, click the <b>Start Quiz</b> button below, 
+            which will reveal the first page of quiz questions and start 
+            the timer. When you have completed the questions, click 
+            the <b>Submit Answers</b> button on the quiz form.
+         </p>
+
+         <aside>
+            <input name="quizclock" id="quizclock" value="0" />
+            <input id="start" type="button" value="Start Quiz"  />
+            <input id="stop" type="button" value="Submit Answers" />
+
+         </aside>
+
+    
+         <table id="quiztable">
+            <tr>
+               <th rowspan="3">1.</th>
+               <td colspan="2">
+                   Firefox, Opera, Chrome, Safari and Explorer are types of what?
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <input type="radio" name="q1" id="q1a" /> <label for="q1a"> a)Internet </label>
+               </td>
+               <td id="cor1">
+                  <input type="radio" name="q1" id="q1c" /> <label for="q1c"> c) Web Browsers</label>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <input type="radio" name="q1" id="q1b" /> <label for="q1b"> b) Network</label>
+               </td>
+               <td>
+                  <input type="radio" name="q1" id="q1d" /> <label for="q1d"> d) Search Engine</label>
+               </td>
+            </tr>
+
+
+            <tr>
+               <th rowspan="3">2.</th>
+               <td colspan="2">
+                   Along with whom did Bill Gates found Microsoft?
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <input type="radio" name="q2" id="q2a" /> <label for="q1"> <label for="q2a"> a) Timothy D. Cook</label>
+               </td>
+               <td>
+                  <input type="radio" name="q2" id="q2c" /> <label for="q1"> <label for="q2c"> c) Larry Page</label>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <input type="radio" name="q2" id="q2b" /> <label for="q1"> <label for="q2b"> b) Steve Jobs</label>
+                </td>
+                <td id="cor2">
+                   <input type="radio" name="q2" id="q2d" /> <label for="q1"> <label for="q2d"> d) Paul Allen</label>
+                </td>
+            </tr>
+
+            <tr>
+               <th rowspan="3">3.</th>
+               <td colspan="2">
+                   Nano, Shuffle, Classic and Touch are variations of what?
+               </td>
+            </tr>
+            <tr>
+               <td id="cor3">
+                  <input type="radio" name="q3" id="q3a" /> <label for="q3a"> a) The Apple iPod</label>
+               </td>
+               <td>
+                  <input type="radio" name="q3" id="q3c" /> <label for="q3c"> c) Play Station</label>
+               </td>
+            </tr>  
+            <tr>
+               <td>
+                  <input type="radio" name="q3" id="q3b" /> <label for="q3b"> b) Music System</label>
+               </td>
+               <td>
+                  <input type="radio" name="q3" id="q3d" /> <label for="q3d"> d) MP3 Players</label>
+               </td>
+            </tr>
+
+            <tr>
+               <th rowspan="3">4.</th>
+               <td colspan="2">
+                   IBM is a well known computer and information technology company, what does IBM stand for?
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <input type="radio" name="q4" id="q4a" /> <label for="q4a"> a) Initial Benefit Machine</label>
+               </td>
+               <td>
+                  <input type="radio" name="q4" id="q4c" /> <label for="q4c"> c) Interactive Bussiness Machine</label>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <input type="radio" name="q4" id="q4b" /> <label for="q4b"> b) Innovative Bussiness Machine</label>
+               </td>
+               <td id="cor4">
+                  <input type="radio" name="q4" id="q4d" /> <label for="q4d"> d)  International Business Machines</label>
+               </td>
+            </tr>
+
+            <tr>
+               <th rowspan="3">5.</th>
+               <td colspan="2">
+                  The technologically advanced humanoid robot ASIMO is made by which car company?
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <input type="radio" name="q5" id="q5a" /> <label for="q5a"> a) Mercedes</label>
+               </td>
+               <td>
+                  <input type="radio" name="q5" id="q5c" /> <label for="q5c"> c) BMW </label>
+               </td>
+            </tr>
+            <tr>
+               <td id="cor5">
+                  <input type="radio" name="q5" id="q5b" /> <label for="q5b"> b) Honda</label>
+               </td>
+               <td>
+                  <input type="radio" name="q5" id="q5d" /> <label for="q5d"> d) Nissan </label>
+               </td>
+            </tr>
+
+         </table>
+
+      </section>
+
+      <footer>#</footer>
+      </form>
+
+   </body>
+
+</html>

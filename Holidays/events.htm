@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      
+
+      
+
+      Filename:         events.htm
+      Supporting files: banner2.png, dates.js,  
+                        modernizr-1.5.js, styles.css
+
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Upcoming Holidays</title>
+      <script src="modernizr-1.5.js" type="text/javascript" ></script>
+      <link href="styles.css" rel="stylesheet" type="text/css" />
+	  <script src="dates.js" type="text/javascript" ></script>
+	  
+	  
+	  
+	  <script type="text/javascript">     //because months is array month must be one less. (start from zero)
+		  function showCountdown() {
+		  var today = new Date();
+		  var date1 = new Date(2013,10,28,24); //thanksgiving 
+		  
+		  var date2 = new Date(2013,11,25,24); //christmas
+		  
+		  var date3 = new Date(2013,11,31,24); //new year
+		  var date4 = new Date(2014,6,4,24); //independance day
+		  var date5 = new Date(2014,8,1,24); //labor day
+		  
+		  document.eventform.thisDay.value = showDateTime(today);
+		  document.eventform.count1.value = changeYear(today,date1);
+		  document.eventform.count2.value = changeYear(today,date2);
+		  document.eventform.count3.value = changeYear(today,date3);
+		  document.eventform.count4.value = changeYear(today,date4);
+		  document.eventform.count5.value = changeYear(today,date5);
+		  
+		  document.eventform.count1.value = countdown(today,date1);
+		  document.eventform.count2.value = countdown(today,date2);
+		  document.eventform.count3.value = countdown(today,date3);
+		  document.eventform.count4.value = countdown(today,date4);
+		  document.eventform.count5.value = countdown(today,date5);
+		  
+		  
+		  
+		  
+		
+		  window.setTimeout("countdown();", 1000);
+		  }
+	  
+	  
+	  </script>
+   </head>
+
+   <body onload="setInterval('showCountdown()',1000)">
+		
+      <form name="eventform" id="eventform" action="">
+
+      <header>
+         
+         <img src="banner2.png" alt="" />
+      </header>
+
+      <nav class="horizontal">
+         <ul>
+				<li><a href="../homepage/home.htm">Home</a></li>
+                 <li><a href="../guess page/guessgame.htm">Guessing Game</a></li>
+				 <li><a href="../tictactoe page/index.htm">Tic-Tac Toe</a></li>
+                 <li><a href="../musicFinal page/music.htm">Music</a></li>
+                 <li><a href="../questionspage/techquiz.htm">Tech Quiz</a></li>
+				 <li><a href="../Holidays/events.htm">Upcoming Holidays</a></li>
+				 <li><a href="#">Inquiry</a></li>
+           
+         </ul>
+      </nav>
+
+    
+
+      <section id="main">
+         <h1>Countdown to Upcoming Holidays</h1>
+
+         <p>
+            Current Date and Time 
+           <input name="thisDay" id="thisDay" readonly="readonly" size="30" />
+         </p>
+         <table>
+            <thead>
+            <tr>
+               <th class="colhead">Event</th>
+               <th class="colhead">Starting Time</th>
+               <th class="colhead">Countdown to Event</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+               <td>
+                  Thanksgiving
+               </td>
+               <td>
+                  Nov 28 at 12:00 a.m.
+               </td>
+               <td>
+                  <input name="count1" id="count1" size="33" />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Christmas
+               </td>
+               <td>
+                  Dec 25 at 12:00 a.m.
+               </td>
+               <td>
+                  <input name="count2" id="count2" size="33" />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  New Year
+               </td>
+               <td>
+                  Dec 31 at 12:00 a.m.
+               </td>
+               <td>
+                  <input name="count3" id="count3" size="33" />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Independance Day
+               </td>
+               <td>
+                  July 4 at 12:00 a.m.
+               </td>
+               <td>
+                  <input name="count4" id="count4" size="33" />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Labor Day
+               </td>
+               <td>
+                  Sep 1 at 12:00 a.m.
+               </td>
+               <td>
+                  <input name="count5" id="count5" size="33" />
+               </td>
+            </tr>
+            
+            </tbody>
+         </table>
+
+      </section>
+
+
+      <footer>
+         <address>
+            Major Holidays in United States
+         </address>
+      </footer>
+
+      </form>
+
+   </body>
+
+</html>

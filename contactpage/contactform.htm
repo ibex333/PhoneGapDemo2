@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <title>Contact Page</title>
+      <link href="form.css" rel="stylesheet" type="text/css" />
+	  
+	  <script type = "text/javascript" src="random.js"></script>
+	  <script type = "text/javascript" src="spam.js"></script>
+	  
+	  
+	  
+	  
+	  <script type="text/javascript">
+			function showEM(userName,emServer){
+			userName = stringReverse(userName);
+			emServer = stringReverse(emServer);			
+			var emLink = userName+"@"+emServer;
+			document.write("<a href='mailto:"+emLink+"'>");
+			document.write(emLink);
+			document.write("</a>");
+			}
+		</script>
+   </head>
+   <body>
+   
+   
+    <script>
+            function showImg() {
+                /* The showImg() function displays a random image from the 0.png through 9.png
+                files. The random image is designed to thwart hackers attempting to enter the
+                contact records by requiring visual confirmation. */
+
+                var imgNumber = randomInteger(9); //Return a random number from 0 to 9.
+                
+                imgNumber=(imgNumber + ".png");
+                
+                document.write("<img src =" + imgNumber + " alt='' />");  
+            }
+            </script>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+     <form id="form" name="form" action="">
+      <header>
+         <img src="contact.jpg" alt="Contact Form" />
+         <nav class="horizontal">
+            <ul>
+				 <li><a href="../homepage/home.htm">Home</a></li>
+                 <li><a href="../guess page/guessgame.htm">Guessing Game</a></li>
+				 <li><a href="../tictactoe page/index.htm">Tic-Tac Toe</a></li>
+                 <li><a href="../musicFinal page/music.htm">Music</a></li>
+                 <li><a href="../questionspage/techquiz.htm">Tech Quiz</a></li>
+				 <li><a href="../Holidays/events.htm">Upcoming Holidays</a></li>
+				 <li><a href="#">Inquiry</a></li>
+			</ul>
+		  </nav>
+      </header>
+      <section id="main">
+							
+							<p>
+							Thank you for visiting our page! We are delighted to have you here, and we hope you will come away with some new knowledge of JavaScript.<br/>
+							Please fill in your info in the contact form and leave us some comments. Let us know how we can improve or just give us some general thoughts. We would love to hear from you!
+							
+							
+							</p>
+							<form name="contactform" id="contactform" method="post" action="send_form_email.php">
+					 
+					<table >
+					 
+					<tr>
+					 
+						 <td valign="top">
+						 
+						  <label for="first_name">First Name *</label>
+						 
+						 </td>
+					 
+						 <td valign="top">
+						 
+						  <input  type="text" name="first_name" maxlength="50" size="30">
+						 
+						 </td>
+					 
+					</tr>
+					 
+					<tr>
+					 
+						 <td valign="top"">
+						 
+						  <label for="last_name">Last Name *</label>
+						 
+						 </td>
+					 
+						 <td valign="top">
+						 
+						  <input  type="text" name="last_name" maxlength="50" size="30">
+						 
+						 </td>
+					 
+					</tr>
+					 
+					<tr>
+					 
+						 <td valign="top">
+						 
+						  <label for="email">Email Address *</label>
+						 
+						 </td>
+					 
+						 <td valign="top">
+						 
+						  <input  type="text" name="email" maxlength="80" size="30">
+						 
+						 </td>
+					 
+					</tr>
+					 
+					<tr>
+					 
+						 <td valign="top">
+						 
+						  <label for="telephone">Telephone Number</label>
+						 
+						 </td>
+					 
+						 <td valign="top">
+						 
+						  <input  type="text" name="telephone" maxlength="30" size="30">
+						 
+						 </td>
+					 
+					</tr>
+					 
+					<tr>
+					 
+						 <td valign="top">
+						 
+						  <label for="comments">Comments *</label>
+						 
+						 </td>
+					 
+						 <td valign="top">
+						 
+						  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+						 
+						 </td>
+					 
+					</tr>
+					 
+					<tr>
+					 
+						 <td colspan="2" style="text-align:center">
+						 
+						 <input type="submit" align="left" value="Submit">   <a href="http://www.testpage.com/email_form.php">Email Form</a>
+						 
+						 </td>
+					 
+					</tr> </br>
+					
+				
+					
+					<tr>
+						<td>Confirm you are human</td>
+						<td><input size="6" /></td>
+					</tr>
+					
+					
+				
+            <tr>
+               <td colspan="2" class="center">
+                   <script>
+                        showImg();
+                        showImg();
+                        showImg();
+                        showImg();
+                        showImg();
+                   
+                   </script>
+               </td>
+            </tr>
+			
+			
+			 <tr>
+               
+               <td>Yan Volis</td>
+               <td>
+				   <script type="text/javascript">
+						showEM("silov_nay","moc.liamg");
+					</script>
+               </td>
+            </tr>
+             <tr>
+               
+               <td>Shreeja Dangol</td>
+               <td>
+				   <script type="text/javascript">
+						showEM("lognad_ajeerhs","moc.liamg");
+					</script>
+               </td>
+            </tr>
+					
+					 
+					</table>
+					 
+					</form>
+      </section>
+      <footer>#</footer>
+     </form>
+   </body>
+</html>

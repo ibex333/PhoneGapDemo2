@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <title>The Guessing Game</title>
+      <link href="guessstyle.css" rel="stylesheet" type="text/css" />
+	  <script type="text/javascript" src="guessgame.js"></script>
+   </head>
+   <body>
+      <section id="main">
+         <header>
+            <img src="guessSign.png" alt="the Guessing Game" />
+            <nav class="horizontal">
+               <ul>
+                 <li><a href="../homepage/home.htm">Home</a></li>
+                 <li><a href="../guess page/guessgame.htm">Guessing Game</a></li>
+				 <li><a href="../tictactoe page/index.htm">Tic-Tac Toe</a></li>
+                 <li><a href="../musicFinal page/music.htm">Music</a></li>
+                 <li><a href="../questionspage/techquiz.htm">Tech Quiz</a></li>
+				 <li><a href="../Holidays/events.htm">Upcoming Holidays</a></li>
+				 <li><a href="#">Inquiry</a></li>
+               </ul>
+            </nav>
+         </header>
+         <article>
+            <h1>Guessing Game</h1>
+			<div id="face">
+				<img src="magicman.jpg" alt="the Guess" />
+			</div>
+            <form id="guessform" name="guessform" action="" />
+			   <p>Our computer has choosen a number from 1 to 100. You have 10
+                  guesses to pick the number. Enter <b>your guess</b> in the box
+                  below and click the <b>Make Guess</b> button. The computer will
+                  tell you whether your guess is <i>high</i>, <i>low</i>,
+                  or <i>right!</i> Keeping guessing until you run out of 
+                  guesses or hit the correct number.
+               </p>
+               <p>To play again, click the <b>Play Again</b> button.</p> 
+			   <br/>
+               <div id="game">
+                  <label id="lleft" for="guesses">Guesses Left</label>
+				  <label id="lguess" for="guess">Your Guess</label>
+				  <label id="lresult" for="result">Result</label>
+				  
+				  <br/>
+				  
+                  <input id="guesses" name="guesses" value="10" readonly="readonly" />
+                  <input id="guess" name="guess" type="number" />
+				  <input id="result" name="result" disabled="disabled"/>
+				  
+				  <br/>
+				  
+                  <input type="button" id="gbutton" value="Guess" />
+				  
+				  <br/>
+                  
+                  <input type="button" id="restart" value="Play Again"  />
+				  
+              </div>
+            </form>
+         </article>
+       </section>
+    </body>
+</html>
